@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventuras pelo Mundo</title>
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header img {
+            max-width: 150px;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+        form {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        form input[type="text"] {
+            padding: 5px;
+        }
+        form button {
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./imagens/4119743.jpg" alt="Logotipo Aventuras pelo Mundo">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#conteudo">Conteúdo</a></li>
+                <li><a href="#videos">Vídeos</a></li>
+                <li><a href="#especialistas">Especialistas</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <form>
+            <input type="text" placeholder="Buscar" required>
+            <button type="submit">Pesquisar</button>
+        </form>
+    </header>
+    
+    <main>
+        <section id="inicio">
+            <h1>Bem-vindo ao Aventuras pelo Mundo</h1>
+            <p>Descubra os destinos mais incríveis e as melhores dicas para sua próxima aventura. De trilhas na montanha a expedições na selva, nós temos tudo para os amantes de aventuras.</p>
+        </section>
+
+        <section id="conteudo">
+            <h2>Artigos em Destaque</h2>
+
+            <article>
+                <h3>Aventura na Patagônia</h3>
+                <p>Explore as paisagens deslumbrantes da Patagônia em uma expedição de 7 dias.</p>
+                <button>Leia mais</button>
+            </article>
+
+            <article>
+                <h3>Trilhas nos Alpes Suíços</h3>
+                <p>Para os amantes de esportes de inverno, os Alpes Suíços oferecem uma experiência inesquecível.</p>
+                <button>Leia mais</button>
+            </article>
+        </section>
+
+        <section id="videos">
+            <h2>Vídeos de Expedições</h2>
+            <!-- URLs de Vídeo: É necessário usar "/embed/" no lugar de "watch?v=" para que o vídeo funcione corretamente -->
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/p2y_h7WENRU" title="Aventura na Floresta Amazônica" frameborder="0" allowfullscreen></iframe>
+                <p>Expedição pela Floresta Amazônica - veja como foi nossa aventura.</p>
+            </div>
+
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-rW8wzFpwkE" title="Aventura nos Alpes" frameborder="0" allowfullscreen></iframe>
+                <p>Aventura nos Alpes Suíços - uma experiência única nas montanhas geladas.</p>
+            </div>
+        </section>
+
+        <section id="especialistas">
+            <h2>Conheça Nossos Especialistas</h2>
+
+            <article>
+                <h3>Eliakim Gama</h3>
+                <p>Guia especializado em expedições na Patagônia e Andes.</p>
+                <a href="https://linkedin.com/in/johndoe" target="_blank">LinkedIn</a>
+            </article>
+
+            <article>
+                <h3>Gabriel Martins</h3>
+                <p>Especialista em trilhas alpinas e esportes de inverno.</p>
+                <a href="https://linkedin.com/in/janesmith" target="_blank">LinkedIn</a>
+            </article>
+        </section>
+
+        <section id="contato">
+            <h2>Fale Conosco</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Seu email" required>
+
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto" required>
+                    <option value="">Selecione um assunto</option>
+                    <option value="dicas">Dicas de Viagem</option>
+                    <option value="expedicoes">Expedições</option>
+                    <option value="outros">Outros</option>
+                </select> 
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Aventuras pelo Mundo feito por Elidio Nascimento. Todos os direitos reservados.</p>
+        <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a> | <a href="#">Ajuda</a></p>
+
+        <div class="social-icons">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </footer>
+</body>
+</html>
